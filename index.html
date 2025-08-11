@@ -1,179 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desde la Silla</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #FFFFFF;
-            color: #000000;
-            line-height: 1.6;
-        }
-        header {
-            padding: 20px 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #000000;
-        }
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        nav a {
-            text-decoration: none;
-            color: #000000;
-            margin-left: 20px;
-            font-weight: 300;
-        }
-        .hero {
-            padding: 80px 60px;
-            text-align: center;
-            background-color: #FAF7F2;
-        }
-        .hero h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .section {
-            padding: 60px;
-        }
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            margin-bottom: 40px;
-        }
-        .posts {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .post {
-            border: 1px solid #F5F5F5;
-            padding: 20px;
-            background: #FFFFFF;
-        }
-        .post h3 {
-            font-family: 'Playfair Display', serif;
-            margin-top: 0;
-        }
-        .about, .projects, .contact {
-            background-color: #FFFFFF;
-        }
-        .about img {
-            max-width: 200px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .project {
-            background: #FAF7F2;
-            padding: 20px;
-        }
-        form {
-            max-width: 500px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-        }
-        input, textarea {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-        button {
-            padding: 10px;
-            background: #000000;
-            color: #FFFFFF;
-            border: none;
-            cursor: pointer;
-        }
-        footer {
-            padding: 40px 60px;
-            background: #F5F5F5;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desde la Silla — Minimalista y Claro</title>
+  <style>
+    /* Reset y base */
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #000000;
+      font-family: 'Georgia', serif;
+      line-height: 1.5;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* Banner minimalista */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #000;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Logo texto tipo banner */
+    .logo {
+      font-weight: 700;
+      font-family: 'Courier New', monospace;
+      font-size: 1.4rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* Navegación horizontal */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      font-family: 'Arial', sans-serif;
+      letter-spacing: 0.05em;
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      border-bottom-color: #000;
+    }
+
+    /* Contenido principal */
+    main {
+      font-size: 1.1rem;
+    }
+
+    /* Pie de página pequeño y limpio */
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Desde la Silla</h1>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#blog">Blog</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">DESDE LA SILLA</div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Inicio</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="inicio" class="hero">
-        <h2>Aquí me siento a mirar el mundo… y a contártelo.</h2>
-    </section>
+  <main>
+    <h1>Bienvenidos a Desde la Silla</h1>
+    <p>
+      Un espacio donde el arte, la reflexión y la vida se encuentran para contar historias desde Medellín.
+    </p>
+    <p>
+      Aquí comparto mis procesos, mis búsquedas y ese camino de reinvención que va desde la gestión cultural hasta la actuación con alma.
+    </p>
+  </main>
 
-    <section id="blog" class="section">
-        <h2 class="section-title">Entradas recientes</h2>
-        <div class="posts">
-            <div class="post">
-                <h3>El café que no se enfría</h3>
-                <p>Un instante detenido en medio de la prisa...</p>
-            </div>
-            <div class="post">
-                <h3>Medellín desde un bus que no frena</h3>
-                <p>La ciudad vista en movimiento, sin bajar la mirada...</p>
-            </div>
-            <div class="post">
-                <h3>Lo que aprendí de escuchar a un desconocido</h3>
-                <p>Conversaciones que se quedan más allá del adiós...</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="sobre-mi" class="section about">
-        <h2 class="section-title">Sobre mí</h2>
-        <div style="text-align:center;">
-            <img src="https://via.placeholder.com/200" alt="Foto de Will">
-            <p>Soy Will, actor en formación y testigo de las pequeñas historias que caben en una silla. Desde aquí escribo, observo y converso con quienes creen que el arte no está solo en los teatros, sino también en las calles, en un café, en la mirada de un extraño.</p>
-        </div>
-    </section>
-
-    <section id="proyectos" class="section projects">
-        <h2 class="section-title">Proyectos</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Corto: La espera</h3>
-                <p>Un retrato íntimo de la ciudad y sus silencios.</p>
-            </div>
-            <div class="project">
-                <h3>Obra: Sala Cuatro</h3>
-                <p>Teatro de cámara con historias reales y humanas.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="section contact">
-        <h2 class="section-title">Contacto</h2>
-        <form>
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <textarea rows="5" placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        © 2025 Desde la Silla – Todos los derechos reservados.
-    </footer>
+  <footer>
+    &copy; 2025 Desde la Silla — Medellín, Colombia
+  </footer>
 </body>
 </html>
